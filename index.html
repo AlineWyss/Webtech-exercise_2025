@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Drink-Karte</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
+  <body>
+    <div class="Zufälliger Drink container">
+      <h1>🍸 Zufälliger Drink</h1>
+      <button onclick="fetchDrink()">Neuer Drink</button>
+    </div>
 
-  <body></body>
+    <div class="Drink suchen container">
+      <h1>🔍 Nach Drink suchen</h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Drink eingeben" />
+        <button onclick="searchDrink()">Suchen</button>
+      </div>
+    </div>
+
+    <div class="flip-card"></div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
