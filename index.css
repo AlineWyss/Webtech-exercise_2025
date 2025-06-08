@@ -2,7 +2,14 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: antiquewhite;
     background-color: rgb(27, 26, 26);
-    
-    
-
+text-align: center;
+padding: 20px;
 }
+
+button{
+    background-color: rgb(141, 203, 141);
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+}
+
