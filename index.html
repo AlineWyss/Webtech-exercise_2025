@@ -8,24 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap"
       rel="stylesheet"
     />
   </head>
 
   <body>
-    <div class="Zufälliger Drink container">
-      <h1>Random drink</h1>
-      <button onclick="fetchDrink()">New drink</button>
-    </div>
+    <h1>🍸 My favorit Drink</h1>
+    <p>Here you can see my favorit drink and how to do it yourself</p>
 
-    <div class="Drink suchen container">
-      <h1>Search for a drink</h1>
-      <div class="search-bar">
-        <input type="text" id="searchInput" placeholder="Suche einen Drink" />
-        <button onclick="searchDrink()">Suchen</button>
-      </div>
-    </div>
+    <!--id = für js lesbar, class = für css lesbar-->
+    <div id="drink-card" class="drink-card"></div>
 
     <div class="flip-card">
       <div class="flip-card-back"></div>

@@ -1,36 +1,45 @@
-.happy-monkey-regular {
-  font-family: "Happy Monkey", system-ui;
+.chela-one-regular {
+  font-family: "Chela One", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
 body{
-      color: antiquewhite;
+    font-family: "Chela One", system-ui; 
     background-color: rgb(40, 39, 39);
-text-align: center;
-padding: 20px;
+    text-align: center;
+    padding: 20px;
+    color: rgb(120, 189, 158);
 }
 
-h1{ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
-
-button{
-    background-color: rgb(141, 203, 141);
-    border-radius: 5px;
-    border-color: rgb(44, 129, 100);
-    padding: 6px 10px;
-    margin-bottom: 20px;
+h1{
+    font-size: 45px;
+    margin: 40px;
 }
 
-input{
-    padding: 5px;
-    border-radius: 5px;
-    border-color: rgb(44, 129, 100);
+p{
+    font-size: 24px;
 }
 
-.container {
-  max-width: 600px;
+
+
+.drink-card {
+  max-width: 400px;
+  background-color: #1e1e1e;
   margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  text-align: left;
 }
 
+.drink-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
 
-
+.drink-card ul {
+  padding-left: 20px;
+  list-style-type: square;
+}
