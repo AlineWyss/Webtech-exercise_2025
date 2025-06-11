@@ -1,4 +1,3 @@
-/* HILFSFUNKTION: aus API-Antwort Zutaten+Menge als Array bauen */
 function buildIngredients(drink){
   const list=[];
   for(let i=1;i<=15;i++){
@@ -9,7 +8,7 @@ function buildIngredients(drink){
   return list;
 }
 
-/* DRINK IN DIE KARTE RENDERN */
+/* DRINK in card */
 function showDrink(drink){
   const front = document.querySelector('.flip-card-front');
   const back  = document.querySelector('.flip-card-back');
@@ -19,7 +18,7 @@ function showDrink(drink){
   front.innerHTML = `
     <img src="${drink.strDrinkThumb}" alt="${drink.strDrink}">
     <h3>${drink.strDrink}</h3>
-    <p style="opacity:.7">Hover / click for recipe</p>
+    <p style="opacity:.7">Hover for recipe</p>
   `;
   back.innerHTML = `
     <h3>${drink.strDrink}</h3>
@@ -29,14 +28,14 @@ function showDrink(drink){
   `;
 }
 
-/* ZUFÄLLIGEN DRINK LADEN */
+/* Loading random drink */
 async function loadRandomDrink(){
   const res  = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
   const data = await res.json();
   showDrink(data.drinks[0]);
 }
 
-/* SPEZIFISCHEN DRINK SUCHEN */
+/* Searching drink */
 async function searchDrink(){
   const query = document.getElementById('searchInput').value.trim();
   if(!query) return;
@@ -51,13 +50,13 @@ async function searchDrink(){
   showDrink(data.drinks[0]);
 }
 
-/* EVENT-LISTENER */
 document.getElementById('newDrinkBtn').addEventListener('click', loadRandomDrink);
-document.getElementById('searchBtn' ).addEventListener('click', searchDrink);
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') searchDrink();
+});
 document.getElementById('searchInput').addEventListener('keydown', e=>{
   if(e.key==='Enter') searchDrink();
 });
 
-
-/* SEITE STARTET MIT EINEM RANDOM DRINK */
+/* Start webside with random drink */
 loadRandomDrink();
