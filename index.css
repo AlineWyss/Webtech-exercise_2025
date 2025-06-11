@@ -1,45 +1,10 @@
-.chela-one-regular {
-  font-family: "Chela One", system-ui;
-  font-weight: 400;
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400; /* normale Stärke */
   font-style: normal;
+  background: radial-gradient(ellipse at center, #0f2027, #203a43, #2c5364);
+  
 }
 
-body{
-    font-family: "Chela One", system-ui; 
-    background-color: rgb(40, 39, 39);
-    text-align: center;
-    padding: 20px;
-    color: rgb(120, 189, 158);
-}
-
-h1{
-    font-size: 45px;
-    margin: 40px;
-}
-
-p{
-    font-size: 24px;
-}
-
-
-
-.drink-card {
-  max-width: 400px;
-  background-color: #1e1e1e;
-  margin: auto;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  text-align: left;
-}
-
-.drink-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.drink-card ul {
-  padding-left: 20px;
-  list-style-type: square;
-}
+.SearchContainer{
+    font-family:

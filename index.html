@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
+  <link rel="stylesheet" href="style.css" />
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drink-Karte</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Meine Seite</title>
+
+    <!-- Google Font: Quicksand -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Verlinke deine CSS-Datei -->
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <h1>🍸 My favorit Drink</h1>
-    <p>Here you can see my favorit drink and how to do it yourself</p>
-
-    <!--id = für js lesbar, class = für css lesbar-->
-    <div id="drink-card" class="drink-card"></div>
-
-    <div class="flip-card">
-      <div class="flip-card-back"></div>
+    <!--Search Container-->
+    <div class="SearchContainer">
+      <input type="text" class="searchInput" placeholder="Search a drink" />
     </div>
 
-    <script src="main.js"></script>
+    <!--Titel with Button-->
+    <div class="Random drink">
+      <h1>Random Drink</h1>
+      <button class="New Drink">New Drink</button>
+    </div>
+
+    <!--Flip-card-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <!-- Bild + Name -->
+        <div class="flip-card-front"></div>
+        <!-- Zutaten + Anleitung -->
+        <div class="flip-card-back"></div>
+      </div>
+    </div>
   </body>
 </html>
