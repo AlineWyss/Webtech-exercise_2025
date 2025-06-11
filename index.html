@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="de">
-  <link rel="stylesheet" href="style.css" />
   <head>
     <meta charset="UTF-8" />
-    <title>Meine Seite</title>
+    <title>Drink-Karte</title>
 
-    <!-- Google Font: Quicksand -->
+    <!-- Google-Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Verlinke deine CSS-Datei -->
+    <!-- CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    <!--Search Container-->
-    <div class="SearchContainer">
-      <input type="text" class="searchInput" placeholder="Search for a drink" />
+    <!-- Suchfeld + Button -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search for a drink" />
+      <button id="searchBtn">🔍</button>
     </div>
 
-    <!--Titel with Button-->
+    <!-- Überschrift + Zufalls-Button -->
     <div class="random-drink">
       <h1>Random Drink</h1>
-      <button class="new-drink">New Drink</button>
+      <button id="newDrinkBtn">New Drink</button>
     </div>
 
-    <!--Flip-card-->
+    <!-- Flip-Card -->
     <div class="flip-card">
       <div class="flip-card-inner">
-        <!-- Bild + Name -->
-        <div class="flip-card-front">
-          <p>View ingredients or recipe</p>
-        </div>
-        <!-- Zutaten + Anleitung -->
+        <div class="flip-card-front"></div>
         <div class="flip-card-back"></div>
       </div>
     </div>
+
+    <!-- JavaScript ganz am Ende -->
+    <script src="main.js"></script>
   </body>
 </html>
