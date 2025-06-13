@@ -70,6 +70,7 @@ body {
 #newDrinkBtn:hover {
   transform: scale(1.1);
   border: 3px solid rgba(120, 242, 251, 0.933);
+  border-style: double;
   box-shadow: 0 0 25px rgba(49, 169, 105, 0.819);
   border-style: double;
 }
@@ -91,6 +92,7 @@ body {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  position: absolute;
 }
 
 .flip-card-front,
@@ -117,7 +119,7 @@ body {
 
 .flip-card-back {
   top: 0;
-  position: absolute;
   transform: rotateY(180deg);
   overflow-y: auto;
+  position: absolute;
 }
