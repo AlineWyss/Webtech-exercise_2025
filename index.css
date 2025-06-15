@@ -121,5 +121,5 @@ body {
   top: 0;
   transform: rotateY(180deg); /*back is behinde in the beginning*/
   overflow-y: auto; /*height changes for content*/
-  position: absolute; /*keeps back-card in place*/
+  position: absolute; /*keeps back-card in place */
 }
